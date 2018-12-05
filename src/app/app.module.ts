@@ -25,6 +25,8 @@ import {OfferComponent} from './user/offer/offer.component';
 import {AboutComponent} from './user/about/about.component';
 import {GalleryComponent} from './user/gallery/gallery.component';
 import {BookingComponent} from './bookings/booking/booking.component';
+import {NgxGalleryModule} from 'ngx-gallery';
+import { NewGalleryComponent } from './user/new-gallery/new-gallery.component';
 
 const appRoutes: Routes = [
   { path: '', component: UserComponent },
@@ -45,7 +47,8 @@ const appRoutes: Routes = [
     FooterComponent,
     UserComponent,
     BookingsComponent,
-    BookingComponent
+    BookingComponent,
+    NewGalleryComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +62,8 @@ const appRoutes: Routes = [
     ToastrModule.forRoot(),
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    NgxGalleryModule
   ],
   providers: [ReserveserviceService],
   bootstrap: [AppComponent],
