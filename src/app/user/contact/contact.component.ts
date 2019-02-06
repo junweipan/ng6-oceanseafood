@@ -18,9 +18,9 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit() {
-    // Chinabar Burwood Location
-    this.latitude = -37.855268;
-    this.longitude = 145.165907;
+    // Ocean seafood bar
+    this.latitude = -37.7883489;
+    this.longitude = 145.1159538;
   }
 
 }
