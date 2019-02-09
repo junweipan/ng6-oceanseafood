@@ -41,7 +41,7 @@ export class BookingComponent implements OnInit {
       // after submitting, go back to home page in 1 second
       setTimeout(() => {
         window.location.href = '/';
-      }, 5000);
+      }, 2000);
     } else {
       this.tostr.warning('Submitted failed, please phone the restaurant', 'Reservation Register');
     }
